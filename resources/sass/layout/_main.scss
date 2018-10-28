@@ -1,0 +1,114 @@
+.wrap-main-top {
+  background-image: url('/img/bg-top.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 660px;
+  margin-bottom: 50px;
+}
+
+.figure-top {
+  width: 100%;
+  max-width: 560px;
+}
+
+.wrap-figure-left {
+  background-image: url(/img/figure-left.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 560px;
+  width: 100%;
+  padding: 6px 0px 6px 0px;
+}
+
+.text-education, .text-education-2 {
+  font-size: 28px;
+  &:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.text-education-2 {
+  color: #004274;
+}
+
+.wrap-figure-right {
+  background-image: url('/img/figure-right.svg');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 560px;
+  width: 100%;
+  padding: 6px 0px 6px 0px;
+}
+
+.wrap-main-mid {
+  background: #F8F8F8;
+}
+
+.wrap-card {
+  background: #FFFFFF;
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  //max-height: 420px;
+}
+
+.wrap-img-card {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  img {
+    max-width: 100%;
+    width: auto;
+    max-height: 213px;
+    height: auto;
+  }
+}
+
+.wrap-card-text {
+  padding: 0 20px 20px;
+  display: block;
+  span {
+    font-weight: 500;
+    line-height: normal;
+    font-size: 16px;
+    color: #2F2F2F;
+  }
+}
+
+.wrap-country {
+  width: auto;
+  height: 350px;
+  background-size: cover;
+  background-image: url('/img/ukraine.jpg');
+  .text-country {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 28px 42px 28px;
+    width: 226px;
+    height: 135px;
+  }
+}
+
+.wrap-img-news {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  img {
+    width: 100%;
+    max-width: 311px;
+    height: auto;
+    max-height: 213px;
+  }
+}
+
+.text-decoration-none {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+

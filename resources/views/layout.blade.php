@@ -9,18 +9,25 @@
     <title>CELT Abroad</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
 
 </head>
 <body>
-<header>
-@include('header.header')
+<header class="nav-main" id="top">
+<div class="container">
+        @include('header.header')
+</div>
 </header>
+<section>
+    @include('main_page.index')
+</section>
 
-<footer>
-    <script src="{{ asset('js/app.js') }}" defer></script>
+<footer class="footer-main">
+    @include('footer.footer')
 </footer>
+<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

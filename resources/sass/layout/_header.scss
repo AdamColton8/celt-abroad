@@ -1,3 +1,41 @@
-.nav-main{
-  background-color: #004274;
+.nav-main {
+    background-color: #004274;
+    padding: 0;
+}
+.nav-main ul li a {
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 25px;
+    &:hover {
+        color: #40C2F3;
+    }
+}
+a.dropdown-item{
+    padding: 0.25rem 1.5rem!important;
+}
+
+.dropdown-lang, .dropdown-prog {
+    background: rgba(0, 66, 116, 0.6);
+    border-radius: 0px 0px 5px 5px;
+    margin-top: 0px;
+}
+
+.dropdown-lang a:hover, .dropdown-prog a:hover {
+    color: #40C2F3;
+    text-decoration: none;
+    background-color: rgba(0, 66, 116, 0.6);
+}
+
+.logo {
+    height: 100%;
+    max-height: 79px;
+    width: 100%;
+    max-width: 273px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-right: 18px;
+    padding-left: 18px;
+}
+.cursor-pointer{
+    cursor: pointer!important;
 }
