@@ -10797,3 +10797,81 @@ a.dropdown-item {
   padding: 50px 27px;
 }
 
+.slider-right-side .slick-list {
+  margin-bottom: 15px;
+}
+
+.slider-right-side .slick-active a.dot {
+  background: #00AEEF;
+}
+
+.slick-slide {
+  height: auto;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #c4c4c4;
+  display: block;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dot:hover {
+  background: #00AEEF;
+}
+
+.slick-dots {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.slick-dots li {
+  padding: 5px;
+}
+
+.bg-share {
+  width: 34px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg-share:hover {
+  background: #ffffff;
+  cursor: pointer;
+}
+

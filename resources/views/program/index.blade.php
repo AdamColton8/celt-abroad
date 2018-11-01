@@ -8,15 +8,44 @@
 </header>
 <section>
     <div class="container mt-4">
-        <div class="row">
+        <div class="row mb-3">
             <div class="col-12">
-                <span>Home</span>
-                <span> > </span>
-                <span>Featured programs</span>
+                <div class="font-weight-normal h5">
+                    <span>Home</span>
+                    <span> > </span>
+                    <span>Featured programs</span>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-6">
+                <h3>Computer Science</h3>
+            </div>
+            <div class="col-6">
+                <div class="d-flex justify-content-end">
+                    <div class="bg-share mr-2">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <div class="bg-share">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6">
+                <h5 class="font-weight-normal"><u>Stanford University</u></h5>
+            </div>
+            <div class="col-6">
+                <div class="d-flex justify-content-end">
+                    <h5 class="font-weight-bold">56 000 $/per year</h5>
+                </div>
+
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12 col-lg-8">
                 <div class="wrap-program-main-img">
                     <img src="{{ asset('img/program/program-img.jpg') }}" alt="img">
                 </div>
@@ -53,7 +82,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-12 col-lg-4">
                 <div>
                     <div class="text-center">
                         <h4>Featured Universities</h4>
@@ -166,8 +195,18 @@
     $(document).ready(function () {
         $('.slider-right-side').slick({
             arrows: false,
-            dots: false,
-            adaptiveHeight: true
+            adaptiveHeight: true,
+            autoplay: true,
+            dots: true,
+            customPaging : function(slider, i) {
+                return '<a class="dot"></a>';
+            },
         });
     });
+
+
+
+
+
+
 </script>

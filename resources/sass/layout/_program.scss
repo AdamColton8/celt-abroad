@@ -4,9 +4,69 @@
         max-width: 730px;
     }
 }
+
 .bg-light-blue {
     background: #E5F7FD;
 }
-.wrap-tab{
+
+.wrap-tab {
     padding: 50px 27px;
+}
+
+.slider-right-side {
+    .slick-list {
+        margin-bottom: 15px;
+    }
+    .slick-active a.dot{
+        background: $light-blue;
+    }
+}
+
+.slick-slide {
+    height: auto; // ← that must not be ignored
+}
+
+.slick-track {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #c4c4c4;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        background: $light-blue;
+    }
+}
+
+.slick-dots {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 30px;
+    li {
+        padding: 5px;
+    }
+}
+.bg-share{
+    width: 34px;
+    height: 32px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background: #ffffff;
+        cursor: pointer;
+
+    }
 }
