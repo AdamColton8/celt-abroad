@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['prefix' => '' ], function() {
+    Route::get('locate/{language}', 'HomeController@locate');
+});
+
+Route::group(['prefix'=>'program'],   function() {
+    Route::get('/', 'ProgramController@index');
+});
+
+Route::group(['prefix'=>'university-page'],   function() {
+    Route::get('/', 'UniversityController@index');
+});

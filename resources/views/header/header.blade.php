@@ -14,7 +14,7 @@
                    aria-haspopup="true" aria-expanded="false">
                     Programs
                 </a>
-                <div class="dropdown-menu dropdown-prog" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu dropdown-prog  " aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Bachelors’s degree</a>
                     <a class="dropdown-item" href="#">Master’s degree</a>
                     <a class="dropdown-item" href="#">Foundation year</a>
@@ -22,30 +22,37 @@
                 </div>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Universities</a>
+                <a class="nav-link" href="#">{{__('messages.Universities')}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Scholarships</a>
+                <a class="nav-link" href="#">{{__('messages.Scholarships')}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Countries</a>
+                <a class="nav-link" href="#">{{__('messages.Countries')}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#">{{__('messages.Blog')}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">SIGN IN/REGISTER</a>
+                <a class="nav-link" href="#">{{__('messages.SIGN IN/REGISTER')}}</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-toggle="dropdown"
+            <li class="nav-item dropdown cursor-pointer">
+                @if(\App::getLocale() == "en")
+                <a class="nav-link dropdown-toggle" id="" role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     <img src="{{ asset('img/eng.svg') }}" alt="eng" class="">
                 </a>
+                @else
+                    <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        <img src="{{ asset('img/turk.svg') }}" alt="turk" class="">
+                    </a>
+                @endif
                 <div class="dropdown-menu dropdown-lang" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">
-                        <img src="{{ asset('img/eng.svg') }}" alt="eng" class="mr-2">English</a>
-                    <a class="dropdown-item" href="#">
-                        <img src="{{ asset('img/turk.svg') }}" alt="turk" class="mr-2">Turkish</a>
+                    <a class="dropdown-item" href="/locate/en">
+                        <img src="{{ asset('img/eng.svg') }}" alt="eng" class="mr-2">{{__('messages.English')}}</a>
+                    <a class="dropdown-item" href="/locate/tur">
+                        <img src="{{ asset('img/turk.svg') }}" alt="turk" class="mr-2">{{__('messages.Türkiye')}}</a>
                 </div>
             </li>
         </ul>
