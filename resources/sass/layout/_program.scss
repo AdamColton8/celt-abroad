@@ -26,13 +26,6 @@
     height: auto; // ← that must not be ignored
 }
 
-.slick-track {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: stretch;
-}
-
 .dot {
     width: 10px;
     height: 10px;
@@ -67,6 +60,6 @@
     &:hover{
         background: #ffffff;
         cursor: pointer;
-
+        
     }
 }

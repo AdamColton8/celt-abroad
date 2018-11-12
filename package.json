@@ -19,6 +19,7 @@
     "popper.js": "^1.12"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.2",
     "slick-carousel": "^1.8.1"
   }
 }

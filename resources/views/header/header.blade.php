@@ -22,16 +22,16 @@
                 </div>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">{{__('messages.Universities')}}</a>
+                <a class="nav-link" href="{{ url('university-page') }}">{{__('messages.Universities')}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">{{__('messages.Scholarships')}}</a>
+                <a class="nav-link" href="">{{__('messages.Scholarships')}}</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">{{__('messages.Countries')}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">{{__('messages.Blog')}}</a>
+                <a class="nav-link" href="{{ url('blog') }}">{{__('messages.Blog')}}</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">{{__('messages.SIGN IN/REGISTER')}}</a>

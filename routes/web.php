@@ -26,3 +26,8 @@ Route::group(['prefix'=>'program'],   function() {
 Route::group(['prefix'=>'university-page'],   function() {
     Route::get('/', 'UniversityController@index');
 });
+
+Route::group(['prefix'=>'blog'],   function() {
+    Route::get('/', 'BlogController@index');
+    Route::get('/blog-article', 'BlogController@blog_article');
+});
