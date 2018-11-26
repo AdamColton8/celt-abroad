@@ -13,4 +13,13 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
    .copy('resources/img/', 'public/img')
-   .sass('resources/sass/app.scss', 'public/css');
+   .sass('resources/sass/app.scss', 'public/css')
+    .disableNotifications();
+
+
+// mix.browserSync('celt.test');
+
+// mix.browserSync({
+//     proxy: 'celt.test',
+//     files: ["app/css/app.css", "app/js/*.js"]
+// });

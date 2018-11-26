@@ -3,26 +3,26 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Session;
-use Response;
-use Validator, Input, Redirect;
 
 class HomeController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
     public function __construct()
     {
-        //$this->middleware('auth');
-        $this->middleware('language');
+        $this->middleware('auth');
     }
 
-    public function locate($language)
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
     {
-        Session::put('language', ($language != '') ? $language : 'en');
-        \App::setLocale(($language != '') ? $language : 'en');
-        return Redirect::back();
-    }
-
-    public function error_page(){
-        return view('404/index');
+        return view('home');
     }
 }

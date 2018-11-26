@@ -13689,7 +13689,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(11);
-module.exports = __webpack_require__(42);
+module.exports = __webpack_require__(43);
 
 
 /***/ }),
@@ -44596,6 +44596,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 __webpack_require__(39);
 __webpack_require__(40);
 __webpack_require__(41);
+__webpack_require__(42);
 
 /***/ }),
 /* 39 */
@@ -44654,6 +44655,47 @@ $(document).ready(function () {
 
 /***/ }),
 /* 42 */
+/***/ (function(module, exports) {
+
+(function ($) {
+
+    $.fn.jPreview = function () {
+        var jPreview = this;
+
+        jPreview.preview = function (selector) {
+            var container = $(selector).data('jpreview-container');
+
+            $(selector).change(function () {
+                $(container).empty();
+                $.each(selector.files, function (index, file) {
+                    var imageData = jPreview.readImageData(file, function (data) {
+                        jPreview.addPreviewImage(container, data);
+                    });
+                });
+            });
+        };
+
+        jPreview.readImageData = function (file, successCallback) {
+            var reader = new FileReader();
+            reader.onload = function (event) {
+                successCallback(event.target.result);
+            };
+            reader.readAsDataURL(file);
+        };
+
+        jPreview.addPreviewImage = function (container, imageDataUrl) {
+            $(container).append('<div class="jpreview-image" style="background-image: url(' + imageDataUrl + ')"></div>');
+        };
+
+        var selectors = $(this);
+        return $.each(selectors, function (index, selector) {
+            jPreview.preview(selector);
+        });
+    };
+})(jQuery);
+
+/***/ }),
+/* 43 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

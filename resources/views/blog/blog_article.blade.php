@@ -41,7 +41,7 @@
                         </article>
                         <div class="row mb-3">
                             @for ($i = 0; $i < 4; $i++)
-                                <div class="col-md-3 mb-2"><img src="{{ asset('img/blog/arch.jpg') }}" alt=""
+                                <div class="col-md-3"><img src="{{ asset('img/blog/arch.jpg') }}" alt=""
                                                            class="img-blog-article"></div>
                             @endfor
                         </div>

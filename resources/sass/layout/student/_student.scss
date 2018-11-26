@@ -1,0 +1,223 @@
+.student-sidebar {
+  background: #00599D;
+  .wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  #sidebar {
+    min-width: 260px;
+    max-width: 260px;
+    min-height: 80vh;
+  }
+
+  #sidebar.active {
+    margin-left: -260px;
+  }
+  a[data-toggle="collapse"] {
+
+  }
+
+  //.dropdown-student::after {
+  //  display: block;
+  //  position: absolute;
+  //  top: 50%;
+  //  right: 20px;
+  //  transform: translateY(-50%);
+  //}
+  #sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background: #00599D;
+    color: #fff;
+    transition: all 0.3s;
+  }
+
+  #sidebar .sidebar-header {
+    padding: 20px;
+    background: #00599D;
+  }
+
+  #sidebar ul.components {
+    padding: 20px 0;
+  }
+
+  #sidebar ul p {
+    color: #fff;
+    padding: 10px;
+  }
+
+  #sidebar ul li a {
+    padding: 10px;
+    //font-size: 1.1em;
+    display: block;
+  }
+  #sidebar ul li a:hover {
+    color: #000000;
+    background: #fff;
+    text-decoration: none;
+  }
+
+  #sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #00477E;
+    border-left: 2px solid #ACDD78;
+    border-radius: 1px;
+
+  }
+  ul ul a {
+    font-size: 0.9em !important;
+    //padding-left: 30px !important;
+    background: #00477E;
+    color: #fff;
+  }
+
+  .dropdown-student {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    i {
+      font-size: 25px;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .personal-info__text {
+    max-width: 123px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+  }
+  .done-item {
+    background: #38C13E;
+    border: rgba(56, 193, 62, 0.2);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .warn-item {
+    background: #D54141;
+    border: rgba(213, 65, 65, 0.2);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrap-done-item {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-evenly;
+    span {
+      max-width: 95px;
+      font-size: 18px;
+      line-height: normal;
+      text-align: center;
+    }
+  }
+  .student-sidebar__item-link {
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    color: rgba(217, 217, 217, 0.8);
+    margin-bottom: 15px;
+  }
+
+}
+
+.wrapper-student {
+  background: #EEEEEE;
+  width: 100%;
+}
+
+.wrap-student-left {
+  padding-top: 24px;
+  padding-left: 28px;
+}
+
+.student-info__title {
+  h2 {
+    font-weight: 500;
+    line-height: normal;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .student-info__sub-title {
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+input[type="file"].input-img {
+  display: none;
+}
+
+label.label-input-img {
+  font-weight: 500;
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  background: #929292;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.wrapper-student-inside{
+  background: #ffffff;
+  margin-left: 22px;
+  margin-top: 37px;
+  padding: 24px 28px;
+  max-width: 1030px;
+}
+.info__sub-title{
+  font-weight: 500;
+  line-height: normal;
+  font-size: 24px;
+}
+.wrap-student-buttons{
+  display: flex;
+  margin-top: 90px;
+  margin-left: 377px;
+  margin-bottom: 90px;
+  .btn-save{
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    color: #FFFFFF;
+    background: #00599D;
+    border-radius: 5px;
+    padding: 15px 40px;
+  }
+  .btn-save-next{
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #38C13E;
+    border-radius: 5px;
+    padding: 15px 17px;
+    img{
+      margin-bottom: 4px;
+      margin-left: 15px;
+    }
+  }
+  .btn-save-block{
+    margin-right: 20px;
+  }
+}
+
+//

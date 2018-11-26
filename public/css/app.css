@@ -11812,3 +11812,279 @@ a.dropdown-item {
   max-width: -moz-available;
 }
 
+.student-sidebar {
+  background: #00599D;
+}
+
+.student-sidebar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.student-sidebar #sidebar {
+  min-width: 260px;
+  max-width: 260px;
+  min-height: 80vh;
+}
+
+.student-sidebar #sidebar.active {
+  margin-left: -260px;
+}
+
+.student-sidebar #sidebar {
+  /* don't forget to add all the previously mentioned styles here too */
+  background: #00599D;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.student-sidebar #sidebar .sidebar-header {
+  padding: 20px;
+  background: #00599D;
+}
+
+.student-sidebar #sidebar ul.components {
+  padding: 20px 0;
+}
+
+.student-sidebar #sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+.student-sidebar #sidebar ul li a {
+  padding: 10px;
+  display: block;
+}
+
+.student-sidebar #sidebar ul li a:hover {
+  color: #000000;
+  background: #fff;
+  text-decoration: none;
+}
+
+.student-sidebar #sidebar ul li.active > a,
+.student-sidebar a[aria-expanded="true"] {
+  color: #fff;
+  background: #00477E;
+  border-left: 2px solid #ACDD78;
+  border-radius: 1px;
+}
+
+.student-sidebar ul ul a {
+  font-size: 0.9em !important;
+  background: #00477E;
+  color: #fff;
+}
+
+.student-sidebar .dropdown-student {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.student-sidebar .dropdown-student i {
+  font-size: 25px;
+}
+
+.student-sidebar .dropdown-student:hover {
+  text-decoration: none;
+}
+
+.student-sidebar .personal-info__text {
+  max-width: 123px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 18px;
+}
+
+.student-sidebar .done-item {
+  background: #38C13E;
+  border: rgba(56, 193, 62, 0.2);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.student-sidebar .warn-item {
+  background: #D54141;
+  border: rgba(213, 65, 65, 0.2);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.student-sidebar .wrap-done-item {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.student-sidebar .wrap-done-item span {
+  max-width: 95px;
+  font-size: 18px;
+  line-height: normal;
+  text-align: center;
+}
+
+.student-sidebar .student-sidebar__item-link {
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 18px;
+  color: rgba(217, 217, 217, 0.8);
+  margin-bottom: 15px;
+}
+
+.wrapper-student {
+  background: #EEEEEE;
+  width: 100%;
+}
+
+.wrap-student-left {
+  padding-top: 24px;
+  padding-left: 28px;
+}
+
+.student-info__title h2 {
+  font-weight: 500;
+  line-height: normal;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.student-info__title .student-info__sub-title {
+  font-weight: normal;
+  line-height: normal;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="file"].input-img {
+  display: none;
+}
+
+label.label-input-img {
+  font-weight: 500;
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  background: #929292;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.wrapper-student-inside {
+  background: #ffffff;
+  margin-left: 22px;
+  margin-top: 37px;
+  padding: 24px 28px;
+  max-width: 1030px;
+}
+
+.info__sub-title {
+  font-weight: 500;
+  line-height: normal;
+  font-size: 24px;
+}
+
+.wrap-student-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 90px;
+  margin-left: 377px;
+  margin-bottom: 90px;
+}
+
+.wrap-student-buttons .btn-save {
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  color: #FFFFFF;
+  background: #00599D;
+  border-radius: 5px;
+  padding: 15px 40px;
+}
+
+.wrap-student-buttons .btn-save-next {
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #38C13E;
+  border-radius: 5px;
+  padding: 15px 17px;
+}
+
+.wrap-student-buttons .btn-save-next img {
+  margin-bottom: 4px;
+  margin-left: 15px;
+}
+
+.wrap-student-buttons .btn-save-block {
+  margin-right: 20px;
+}
+
+.jpreview-image {
+  width: 213px;
+  height: 200px;
+  position: relative;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.jpreview-container::after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+
+.jpreview-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
