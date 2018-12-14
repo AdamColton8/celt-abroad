@@ -1,0 +1,52 @@
+.application-card{
+  .section-info{
+    margin-bottom: 37px;
+    display: flex;
+    .img-wrap{
+      img{
+        max-width: 93px;
+        border-radius: 5px;
+      }
+    }
+    .text-wrap{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: bold;
+      span{
+
+
+      }
+    }
+  }
+  .section-sub-info{
+    .title-info__wrap{
+      display: flex;
+      .title{
+        width: 67px;
+        font-weight: bold;
+      }
+    }
+
+  }
+
+}
+.sat-wrap{
+  width: fit-content;
+  margin: 0 auto;
+}
+.btn-give-bonus, .btn-accept, .btn-reject{
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+.btn-give-bonus{
+  background: #ff8d08;
+}
+.btn-accept{
+  background: #38C13E;
+}
+.btn-reject{
+  background: #929292;
+}

@@ -7,7 +7,9 @@
     </div>
 </header>
 <section>
-    teacher
+    <div class="d-flex">
+        @include('representative.sidebar.sidebar')
+    </div>
 </section>
 
 <footer class="footer-main">

@@ -30,7 +30,7 @@
             <div class="col-12">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <h2>Featured Scholarships</h2>
-                    <a href="">View more</a>
+                    <a href="" class="text-dark text-decoration-underline">View more</a>
                 </div>
             </div>
         </div>
@@ -163,7 +163,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
-                <div class="wrap-country d-flex justify-content-center align-items-center">
+                <div class="wrap-country-austria d-flex justify-content-center align-items-center">
                     <div class="text-country text-center">
                         <span class="d-block text-white h3 font-weight-bold">Austria</span>
                         <span class="d-block text-white h4">10 universities</span>
@@ -171,7 +171,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
-                <div class="wrap-country d-flex justify-content-center align-items-center">
+                <div class="wrap-country-turkey d-flex justify-content-center align-items-center">
                     <div class="text-country text-center">
                         <span class="d-block text-white h3 font-weight-bold">Turkey</span>
                         <span class="d-block text-white h4">8 universities</span>
@@ -179,7 +179,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
-                <div class="wrap-country d-flex justify-content-center align-items-center">
+                <div class="wrap-country-germany d-flex justify-content-center align-items-center">
                     <div class="text-country text-center">
                         <span class="d-block text-white h3 font-weight-bold">Germany</span>
                         <span class="d-block text-white h4">7 universities</span>
@@ -187,7 +187,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
-                <div class="wrap-country d-flex justify-content-center align-items-center">
+                <div class="wrap-country-poland d-flex justify-content-center align-items-center">
                     <div class="text-country text-center">
                         <span class="d-block text-white h3 font-weight-bold">Poland</span>
                         <span class="d-block text-white h4">12 universities</span>
@@ -195,7 +195,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
-                <div class="wrap-country d-flex justify-content-center align-items-center">
+                <div class="wrap-country-italy d-flex justify-content-center align-items-center">
                     <div class="text-country text-center">
                         <span class="d-block text-white h3 font-weight-bold">Italy</span>
                         <span class="d-block text-white h4">6 universities</span>

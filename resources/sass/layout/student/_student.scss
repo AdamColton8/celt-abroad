@@ -30,8 +30,10 @@
     /* don't forget to add all the previously mentioned styles here too */
     background: #00599D;
     color: #fff;
-    transition: all 0.3s;
+    //transition: all 0.3s;
+
   }
+
 
   #sidebar .sidebar-header {
     padding: 20px;
@@ -117,7 +119,7 @@
     display: flex !important;
     align-items: center;
     justify-content: space-evenly;
-    span {
+    span, a {
       max-width: 95px;
       font-size: 18px;
       line-height: normal;
@@ -175,24 +177,26 @@ label.label-input-img {
   padding: 20px;
 }
 
-.wrapper-student-inside{
+.wrapper-student-inside {
   background: #ffffff;
   margin-left: 22px;
   margin-top: 37px;
   padding: 24px 28px;
   max-width: 1030px;
 }
-.info__sub-title{
+
+.info__sub-title {
   font-weight: 500;
   line-height: normal;
   font-size: 24px;
 }
-.wrap-student-buttons{
+
+.wrap-student-buttons {
   display: flex;
   margin-top: 90px;
   margin-left: 377px;
   margin-bottom: 90px;
-  .btn-save{
+  .btn-save {
     font-weight: bold;
     line-height: normal;
     font-size: 24px;
@@ -201,7 +205,7 @@ label.label-input-img {
     border-radius: 5px;
     padding: 15px 40px;
   }
-  .btn-save-next{
+  .btn-save-next {
     font-weight: bold;
     line-height: normal;
     font-size: 24px;
@@ -210,14 +214,174 @@ label.label-input-img {
     background: #38C13E;
     border-radius: 5px;
     padding: 15px 17px;
-    img{
+    img {
       margin-bottom: 4px;
       margin-left: 15px;
     }
   }
-  .btn-save-block{
+  .btn-save-block {
     margin-right: 20px;
   }
 }
 
-//
+//info-destination
+
+.student-info__sub {
+  font-size: 24px;
+  color: #323232;
+}
+
+//checkbox
+
+.container-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+.wrap-checkbox-student {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 1051.98px) {
+
+
+  .wrap-student-buttons {
+    display: flex;
+    margin-top: 90px;
+    margin-left: 0px;
+    margin-bottom: 90px;
+    justify-content: center;
+    .btn-save {
+      font-weight: bold;
+      line-height: normal;
+      font-size: 16px;
+      color: #FFFFFF;
+      background: #00599D;
+      border-radius: 5px;
+      padding: 15px 40px;
+    }
+    .btn-save-next {
+      font-weight: bold;
+      line-height: normal;
+      font-size: 16px;
+      text-align: center;
+      color: #FFFFFF;
+      background: #38C13E;
+      border-radius: 5px;
+      padding: 12.5px 17px;
+      img {
+        margin-bottom: 4px;
+        margin-left: 15px;
+      }
+    }
+    .btn-save-block {
+      margin-right: 20px;
+    }
+  }
+
+}
+
+@media (max-width: 992.98px) {
+
+
+}
+.collapse-active{
+  left: 205px !important
+}
+
+.wrap-collapse{
+  display: none;
+  position: absolute;
+  left: 0px;
+  z-index: 9999;
+}
+@media (max-width: 993.98px) {
+  .wrap-collapse{
+    display: block;
+    margin-top: 15px;
+
+  }
+  #sidebar{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    min-height: 100vh!important;
+    min-width: 190px!important;
+  }
+
+  .wrapper-student-inside {
+    margin-left: 0px;
+    margin-top: 70px;
+    padding: 9px;
+
+  }
+}
+

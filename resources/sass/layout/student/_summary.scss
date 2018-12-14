@@ -1,0 +1,20 @@
+.add-attended{
+  display: block;
+  color: #00599d;
+}
+.wrapper-schools-attended{
+  margin-top: 20px;
+  margin-left: 22px;
+  padding: 24px 28px;
+  max-width: 1030px;
+  background: #ffffff;
+  display: none;
+}
+#schoolsAttended-0{
+  display: none!important;
+}
+@media (max-width: 993.98px) {
+  .wrapper-schools-attended{
+    margin-left: 0;
+  }
+}

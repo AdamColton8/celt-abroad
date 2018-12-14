@@ -1,0 +1,86 @@
+.nav-tabs-programs, .nav-tabs-favorites {
+  display: flex;
+  justify-content: space-between;
+  li.nav-item {
+    .nav-link.active {
+      background-color: rgba(0, 174, 239, 0.3);
+      font-weight: bold;
+      color: #fff;
+      border-radius: 5px 5px 0 0;
+    }
+    .nav-link {
+      color: #9a9a9a;
+    }
+  }
+
+}
+
+.nav-tabs-favorites {
+  .nav-item {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+.del-wrap {
+  position: absolute;
+  left: 98%;
+  top: -25px;
+}
+
+.wrap-img-programs {
+  //max-width: 328px;
+}
+
+.text-decoration-underline {
+  text-decoration: underline !important;
+}
+
+.wrapper-student-tabs {
+  margin-left: 22px;
+  margin-top: 37px;
+  max-width: 1030px;
+}
+
+.wrapper-student-programs {
+  background: #ffffff;
+  margin-left: 22px;
+  padding: 24px 28px;
+  max-width: 1030px;
+}
+
+@media (max-width: 767px) {
+  .del-wrap {
+    display: none;
+  }
+  .title-programs{
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 994px) {
+
+  .wrapper-student-tabs {
+    margin-top: 70px;
+    margin-left: 0;
+  }
+  .wrapper-student-programs {
+    margin-left: 0;
+  }
+  .nav-tabs-programs, .nav-tabs-favorites {
+    justify-content: space-around;
+    li.nav-item {
+      .nav-link.active {
+        border-radius: 5px;
+      }
+      .nav-link {
+
+      }
+    }
+  }
+  .nav-tabs-favorites {
+    margin: 0 20px 20px;
+  }
+
+
+}

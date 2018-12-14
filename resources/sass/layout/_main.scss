@@ -1,16 +1,17 @@
 .wrap-main-top {
-  background-image: url('/img/bg-top.svg');
+  background-image: url('/img/bg-top.jpg');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 660px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .figure-top {
   width: 100%;
   max-width: 560px;
 }
+
 
 .wrap-figure-left {
   background-image: url(/img/figure-left.svg);
@@ -20,6 +21,8 @@
   max-width: 560px;
   width: 100%;
   padding: 6px 0px 6px 0px;
+  position: relative;
+  bottom: -29px;
 }
 
 .text-education, .text-education-2 {
@@ -41,7 +44,9 @@
   background-size: cover;
   max-width: 560px;
   width: 100%;
-  padding: 6px 0px 6px 0px;
+  padding: 6px 0px 7px 0px;
+  position: relative;
+  bottom: -28px;
 }
 
 .wrap-main-mid {
@@ -54,6 +59,12 @@
   width: 100%;
   height: auto;
   //max-height: 420px;
+}
+
+
+.navbar-brand{
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .wrap-img-card {
@@ -79,7 +90,7 @@
   }
 }
 
-.wrap-country {
+.wrap-country, .wrap-country-austria, .wrap-country-turkey, .wrap-country-germany, .wrap-country-poland, .wrap-country-italy {
   width: auto;
   height: 350px;
   background-size: cover;
@@ -91,6 +102,22 @@
     width: 226px;
     height: 135px;
   }
+}
+
+.wrap-country-austria{
+  background-image: url('/img/austria.jpg');
+}
+.wrap-country-turkey{
+  background-image: url('/img/turkey.jpg');
+}
+.wrap-country-germany{
+  background-image: url('/img/germany.jpg');
+}
+.wrap-country-poland{
+  background-image: url('/img/poland.jpg');
+}
+.wrap-country-italy{
+  background-image: url('/img/italy.jpg');
 }
 
 .wrap-img-news {

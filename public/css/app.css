@@ -11373,7 +11373,7 @@ a.text-dark:focus {
 
 .nav-main ul li a {
   font-size: 16px;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   padding: 25px;
 }
 
@@ -11415,13 +11415,23 @@ a.dropdown-item {
   cursor: pointer !important;
 }
 
+@media (max-width: 575.98px) {
+  .logo {
+    max-width: 220px;
+  }
+
+  .nav-main ul li a {
+    padding: 12px;
+  }
+}
+
 .wrap-main-top {
-  background-image: url("/img/bg-top.svg");
+  background-image: url("/img/bg-top.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 660px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .figure-top {
@@ -11437,6 +11447,8 @@ a.dropdown-item {
   max-width: 560px;
   width: 100%;
   padding: 6px 0px 6px 0px;
+  position: relative;
+  bottom: -29px;
 }
 
 .text-education,
@@ -11461,7 +11473,9 @@ a.dropdown-item {
   background-size: cover;
   max-width: 560px;
   width: 100%;
-  padding: 6px 0px 6px 0px;
+  padding: 6px 0px 7px 0px;
+  position: relative;
+  bottom: -28px;
 }
 
 .wrap-main-mid {
@@ -11473,6 +11487,11 @@ a.dropdown-item {
   border-radius: 5px;
   width: 100%;
   height: auto;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .wrap-img-card {
@@ -11504,19 +11523,49 @@ a.dropdown-item {
   color: #2F2F2F;
 }
 
-.wrap-country {
+.wrap-country,
+.wrap-country-austria,
+.wrap-country-turkey,
+.wrap-country-germany,
+.wrap-country-poland,
+.wrap-country-italy {
   width: auto;
   height: 350px;
   background-size: cover;
   background-image: url("/img/ukraine.jpg");
 }
 
-.wrap-country .text-country {
+.wrap-country .text-country,
+.wrap-country-austria .text-country,
+.wrap-country-turkey .text-country,
+.wrap-country-germany .text-country,
+.wrap-country-poland .text-country,
+.wrap-country-italy .text-country {
   background: rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   padding: 28px 42px 28px;
   width: 226px;
   height: 135px;
+}
+
+.wrap-country-austria {
+  background-image: url("/img/austria.jpg");
+}
+
+.wrap-country-turkey {
+  background-image: url("/img/turkey.jpg");
+}
+
+.wrap-country-germany {
+  background-image: url("/img/germany.jpg");
+}
+
+.wrap-country-poland {
+  background-image: url("/img/poland.jpg");
+}
+
+.wrap-country-italy {
+  background-image: url("/img/italy.jpg");
 }
 
 .wrap-img-news {
@@ -11840,8 +11889,6 @@ a.dropdown-item {
   /* don't forget to add all the previously mentioned styles here too */
   background: #00599D;
   color: #fff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .student-sidebar #sidebar .sidebar-header {
@@ -11957,7 +12004,8 @@ a.dropdown-item {
           justify-content: space-evenly;
 }
 
-.student-sidebar .wrap-done-item span {
+.student-sidebar .wrap-done-item span,
+.student-sidebar .wrap-done-item a {
   max-width: 95px;
   font-size: 18px;
   line-height: normal;
@@ -12065,6 +12113,166 @@ label.label-input-img {
   margin-right: 20px;
 }
 
+.student-info__sub {
+  font-size: 24px;
+  color: #323232;
+}
+
+.container-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.container-checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.container-checkbox .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.wrap-checkbox-student {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 1051.98px) {
+  .wrap-student-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 90px;
+    margin-left: 0px;
+    margin-bottom: 90px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .wrap-student-buttons .btn-save {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #00599D;
+    border-radius: 5px;
+    padding: 15px 40px;
+  }
+
+  .wrap-student-buttons .btn-save-next {
+    font-weight: bold;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #38C13E;
+    border-radius: 5px;
+    padding: 12.5px 17px;
+  }
+
+  .wrap-student-buttons .btn-save-next img {
+    margin-bottom: 4px;
+    margin-left: 15px;
+  }
+
+  .wrap-student-buttons .btn-save-block {
+    margin-right: 20px;
+  }
+}
+
+.collapse-active {
+  left: 205px !important;
+}
+
+.wrap-collapse {
+  display: none;
+  position: absolute;
+  left: 0px;
+  z-index: 9999;
+}
+
+@media (max-width: 993.98px) {
+  .wrap-collapse {
+    display: block;
+    margin-top: 15px;
+  }
+
+  #sidebar {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    min-height: 100vh !important;
+    min-width: 190px !important;
+  }
+
+  .wrapper-student-inside {
+    margin-left: 0px;
+    margin-top: 70px;
+    padding: 9px;
+  }
+}
+
 .jpreview-image {
   width: 213px;
   height: 200px;
@@ -12086,5 +12294,738 @@ label.label-input-img {
 .jpreview-image img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.add-attended {
+  display: block;
+  color: #00599d;
+}
+
+.wrapper-schools-attended {
+  margin-top: 20px;
+  margin-left: 22px;
+  padding: 24px 28px;
+  max-width: 1030px;
+  background: #ffffff;
+  display: none;
+}
+
+#schoolsAttended-0 {
+  display: none !important;
+}
+
+@media (max-width: 993.98px) {
+  .wrapper-schools-attended {
+    margin-left: 0;
+  }
+}
+
+.wrap-info-scores {
+  /* The switch - the box around the slider */
+  /* Hide default HTML checkbox */
+  /* The slider */
+  /* Rounded sliders */
+}
+
+.wrap-info-scores .switch {
+  position: relative;
+  display: inline-block;
+  width: 53px;
+  height: 24px;
+}
+
+.wrap-info-scores .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.wrap-info-scores .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.wrap-info-scores .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.wrap-info-scores input:checked + .slider {
+  background-color: #00AEEF;
+}
+
+.wrap-info-scores input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+.wrap-info-scores input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.wrap-info-scores .slider.round {
+  border-radius: 34px;
+}
+
+.wrap-info-scores .slider.round:before {
+  border-radius: 50%;
+}
+
+.wrap-info-scores .eng-scores-test,
+.wrap-info-scores .sat-scores-test,
+.wrap-info-scores .gre-scores-test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap-info-scores .switch {
+  margin-bottom: 0;
+}
+
+.bg-dark-gray {
+  background: #EEEEEE;
+}
+
+.text-dark-gray {
+  color: #7e7e7e;
+}
+
+.wrapper-student-profile,
+.wrapper-student-study,
+.wrapper-student-edu-sum,
+.wrapper-student-scores {
+  background: #ffffff;
+  margin-left: 22px;
+  margin-top: 37px;
+  padding: 24px 28px;
+  position: relative;
+}
+
+.wrapper-student-study,
+.wrapper-student-scores {
+  margin-left: 0;
+}
+
+.wrapper-student-edu-sum,
+.wrapper-student-scores {
+  margin-top: 20px;
+}
+
+.wrapper-student-edu-sum {
+  margin-bottom: 50px;
+}
+
+.image-student {
+  width: 100%;
+  max-width: 182px;
+  height: 182px;
+  border-radius: 5px;
+}
+
+.image-student img {
+  width: 100%;
+  max-width: 182px;
+}
+
+.title-profile_info {
+  width: 100%;
+  max-width: 85px;
+  display: block;
+}
+
+.title-profile_sub-info {
+  max-width: 165px;
+  word-break: break-word;
+}
+
+.wrap-profile-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.image-student span {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.student-profile-edit {
+  position: absolute;
+  left: 93%;
+}
+
+.student-profile-edit a {
+  color: #000;
+}
+
+.exact-scores {
+  width: 74px;
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .edit1 {
+    margin-top: 15px;
+  }
+
+  .edit2 {
+    margin-top: 6px;
+  }
+
+  .edit3 {
+    margin-top: 6px;
+  }
+
+  .edit4 {
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 1520px) {
+  .wrapper-student-profile {
+    padding: 24px 12px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .profile-info {
+    margin-top: 60px;
+  }
+
+  .wrapper-student-profile {
+    margin-left: 0;
+    margin-top: 70px;
+  }
+
+  .wrapper-student-edu-sum {
+    margin-bottom: -20px;
+    margin-left: 0;
+  }
+}
+
+.nav-tabs-programs,
+.nav-tabs-favorites {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-tabs-programs li.nav-item .nav-link.active,
+.nav-tabs-favorites li.nav-item .nav-link.active {
+  background-color: rgba(0, 174, 239, 0.3);
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+}
+
+.nav-tabs-programs li.nav-item .nav-link,
+.nav-tabs-favorites li.nav-item .nav-link {
+  color: #9a9a9a;
+}
+
+.nav-tabs-favorites .nav-item {
+  width: 50%;
+  text-align: center;
+}
+
+.del-wrap {
+  position: absolute;
+  left: 98%;
+  top: -25px;
+}
+
+.text-decoration-underline {
+  text-decoration: underline !important;
+}
+
+.wrapper-student-tabs {
+  margin-left: 22px;
+  margin-top: 37px;
+  max-width: 1030px;
+}
+
+.wrapper-student-programs {
+  background: #ffffff;
+  margin-left: 22px;
+  padding: 24px 28px;
+  max-width: 1030px;
+}
+
+@media (max-width: 767px) {
+  .del-wrap {
+    display: none;
+  }
+
+  .title-programs {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 994px) {
+  .wrapper-student-tabs {
+    margin-top: 70px;
+    margin-left: 0;
+  }
+
+  .wrapper-student-programs {
+    margin-left: 0;
+  }
+
+  .nav-tabs-programs,
+  .nav-tabs-favorites {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .nav-tabs-programs li.nav-item .nav-link.active,
+  .nav-tabs-favorites li.nav-item .nav-link.active {
+    border-radius: 5px;
+  }
+
+  .nav-tabs-favorites {
+    margin: 0 20px 20px;
+  }
+}
+
+.personal-info__text-representative {
+  max-width: none;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 18px;
+  margin-right: 22px;
+}
+
+.dropdown-representative {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.representative-sidebar #sidebar ul li a {
+  padding: 20px 10px 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.representative-sidebar .student-sidebar__item-link {
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 18px;
+  color: rgba(217, 217, 217, 0.8);
+  margin-bottom: 0;
+}
+
+.wrap-representative-block {
+  margin-top: 62px;
+  margin-left: 35px;
+}
+
+.wrap-representative-inside {
+  max-width: 1030px;
+  width: 100%;
+}
+
+.wrap-representative-left {
+  margin-top: 62px;
+}
+
+.btn-save {
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  color: #FFFFFF;
+  background: #38C13E;
+  border-radius: 5px;
+  padding: 15px 68px;
+}
+
+.institution-label {
+  width: 213px;
+  height: 200px;
+  position: relative;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  background: #C9DDEC;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.institution-label span {
+  background-color: #3490dc;
+  border-color: #3490dc;
+  padding: 8px 25px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.jpreview-container-institution div.jpreview-image {
+  margin: 0 10px 10px 10px;
+  width: 208px;
+}
+
+.btn-save-institution {
+  background: #38C13E;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px 89px;
+}
+
+.add-start-date,
+.add-tution-fee,
+.add-deadline-date {
+  text-decoration: underline;
+  color: #00599d;
+}
+
+.save-duplicate {
+  font-size: 24px;
+  padding: 10px 51px;
+  background: #00AEEF;
+  color: #fff;
+}
+
+.save-add-program {
+  color: #fff;
+  background: #38C13E;
+  padding: 5px 68px;
+  font-size: 24px;
+}
+
+.institution-label-addProgram {
+  width: 182px;
+  height: 97px;
+  position: relative;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  background: #C9DDEC;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.institution-label-addProgram span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.institution-label-addProgram img {
+  width: 33px;
+  height: 31px;
+}
+
+.justify-content-evenly {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.wrap-done-item .add-program {
+  font-size: 18px;
+  color: #00AEEF;
+  font-weight: bold;
+}
+
+.application-card .section-info {
+  margin-bottom: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.application-card .section-info .img-wrap img {
+  max-width: 93px;
+  border-radius: 5px;
+}
+
+.application-card .section-info .text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.application-card .section-sub-info .title-info__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.application-card .section-sub-info .title-info__wrap .title {
+  width: 67px;
+  font-weight: bold;
+}
+
+.sat-wrap {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.btn-give-bonus,
+.btn-accept,
+.btn-reject {
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-give-bonus {
+  background: #ff8d08;
+}
+
+.btn-accept {
+  background: #38C13E;
+}
+
+.btn-reject {
+  background: #929292;
+}
+
+.btn-facebook {
+  background: #506dab;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.btn-facebook:hover {
+  color: #fff;
+  background: #0637ab;
+}
+
+.btn-google {
+  background: #dd4b39;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.btn-google:hover {
+  color: #fff;
+  background: #ab212c;
+}
+
+.nav-login {
+  font-size: 24px;
+  color: #fff;
+  background: #40C2F3;
+  margin-bottom: 0 !important;
+  font-weight: 500;
+}
+
+.nav-login-wrap {
+  background: #40C2F3;
+}
+
+.nav-login-wrap .active {
+  background-color: #fff !important;
+  color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.nav-link-modal {
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.nav-link-modal:hover {
+  color: #40C2F3 !important;
+}
+
+.border-auth {
+  border: 2px solid #e0e0e0;
+}
+
+.container-checkbox-auth {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.container-checkbox-auth input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+
+.checkmark-auth {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #c4c4c4;
+  border: 1px solid #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+
+.container-checkbox-auth:hover input ~ .checkmark-auth {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.container-checkbox-auth input:checked ~ .checkmark-auth {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark-auth:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+
+.container-checkbox-auth input:checked ~ .checkmark-auth:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.container-checkbox-auth .checkmark-auth:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.remember-me {
+  color: rgba(157, 157, 157, 0.9);
+}
+
+.lost-pass {
+  color: #40C2F3;
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: 7px;
+}
+
+.btn-login-auth {
+  background: #40C2F3;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.wrap-close-auth {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.wrap-close-auth button {
+  position: absolute;
+  opacity: 1;
+  top: 15px;
+  color: #fff;
+}
+
+.nav-auth {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.input-user-img {
+  border: 2px solid #e0e0e0;
+  background: transparent;
+  border-right: 0;
+  color: #9d9d9d;
 }
 

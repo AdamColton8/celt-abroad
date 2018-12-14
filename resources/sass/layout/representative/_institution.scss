@@ -1,0 +1,98 @@
+.wrap-institution-block {
+
+}
+
+.institution-label {
+  width: 213px;
+  height: 200px;
+  position: relative;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  background: #C9DDEC;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    background-color: #3490dc;
+    border-color: #3490dc;
+    padding: 8px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.jpreview-container-institution {
+  div.jpreview-image {
+    margin: 0 10px 10px 10px;
+    width: 208px;
+
+  }
+}
+
+.btn-save-institution {
+  background: #38C13E;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px 89px;
+}
+
+.add-start-date, .add-tution-fee, .add-deadline-date {
+  text-decoration: underline;
+  color: #00599d;
+}
+.save-duplicate{
+  font-size: 24px;
+  padding: 10px 51px;
+  background: $light-blue;
+  color: #fff;
+
+}
+
+.save-add-program {
+  color: #fff;
+  background: #38C13E;
+  padding: 5px 68px;
+  font-size: 24px;
+}
+.institution-label-addProgram{
+  width: 182px;
+  height: 97px;
+  position: relative;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  background: #C9DDEC;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span{
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+    line-height: 18px;
+  }
+  img{
+    width: 33px;
+    height: 31px;
+  }
+}
+.justify-content-evenly{
+  justify-content: space-evenly;
+}
+.wrap-done-item{
+  .add-program{
+    font-size: 18px;
+    color: $light-blue;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,108 @@
+.bg-dark-gray{
+  background: #EEEEEE;
+}
+.text-dark-gray{
+  color: #7e7e7e;
+}
+.wrapper-student-profile, .wrapper-student-study, .wrapper-student-edu-sum, .wrapper-student-scores{
+  background: #ffffff;
+  margin-left: 22px;
+  margin-top: 37px;
+  padding: 24px 28px;
+  //max-width: 515px;
+  //max-height: 289px;
+  //height: 100%;
+  position: relative;
+}
+
+.wrapper-student-study, .wrapper-student-scores{
+  margin-left: 0;
+}
+
+.wrapper-student-edu-sum, .wrapper-student-scores{
+  margin-top: 20px;
+}
+
+.wrapper-student-edu-sum{
+  margin-bottom: 50px;
+}
+
+.image-student{
+  width: 100%;
+  max-width: 182px;
+  height: 182px;
+  border-radius: 5px ;
+  img{
+    width: 100%;
+    max-width: 182px;
+  }
+}
+.title-profile_info{
+  width: 100%;
+  max-width: 85px;
+  display: block;
+}
+.title-profile_sub-info{
+  max-width: 165px;
+  word-break: break-word;
+}
+.wrap-profile-info{
+  display: flex;
+  margin-bottom: 15px;
+}
+.image-student{
+  span{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+}
+.student-profile-edit{
+  position: absolute;
+  left: 93%;
+  a{
+    color: #000;
+  }
+}
+.exact-scores{
+  width: 74px;
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .edit1{
+    margin-top: 15px;
+  }
+  .edit2{
+    margin-top: 6px;
+  }
+  .edit3{
+    margin-top: 6px;
+  }
+  .edit4{
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 1520px) {
+  .wrapper-student-profile{
+    padding: 24px 12px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .profile-info{
+    margin-top: 60px;
+  }
+  .wrapper-student-profile{
+    margin-left: 0;
+    margin-top: 70px;
+  }
+  .wrapper-student-edu-sum{
+    margin-bottom: -20px;
+    margin-left: 0;
+  }
+}
+

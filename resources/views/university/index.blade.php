@@ -305,7 +305,7 @@
                                            -->
                                             <iframe class="videoIframe js-videoIframe" src="" frameborder="0"
                                                     allowTransparency="true" allowfullscreen
-                                                    data-src="https://www.youtube.com/embed/FKWwdQu6_ok?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+                                                    data-src="https://www.youtube.com/embed/UL6DE6yrEyo?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
                                             <button class="videoPoster js-videoPoster"><img
                                                     class="d-block mx-auto play-btn"
                                                     src="{{ asset('img/university/play-btn.svg') }}" alt=""></button>

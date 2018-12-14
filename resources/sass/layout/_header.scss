@@ -4,7 +4,7 @@
 }
 .nav-main ul li a {
     font-size: 16px;
-    color: #FFFFFF;
+    color: #FFFFFF!important;
     padding: 25px;
     &:hover {
         color: #40C2F3;
@@ -38,4 +38,12 @@ a.dropdown-item{
 }
 .cursor-pointer{
     cursor: pointer!important;
+}
+@media (max-width: 575.98px) {
+    .logo{
+        max-width: 220px;
+    }
+    .nav-main ul li a {
+        padding: 12px;
+    }
 }
