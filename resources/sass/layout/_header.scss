@@ -40,10 +40,24 @@ a.dropdown-item{
     cursor: pointer!important;
 }
 @media (max-width: 575.98px) {
+
     .logo{
         max-width: 220px;
     }
     .nav-main ul li a {
         padding: 12px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .nav-main {
+        padding: 5px 0;
+    }
+    .toggler-main{
+        border: none;
+    }
+    .dropdown-prog, .dropdown-lang{
+        border: none;
     }
 }

@@ -1,24 +1,78 @@
 <div class="wrap-main-top">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="cursor-pointer wrap-figure-left">
-                    <a href="#" class="text-education">
-                    <span class="">
-                        <img src="{{ asset('img/diploma.svg') }}" class="ml-2 mr-2" alt="">
-                        Check your <span class="font-weight-bold">Scholarship eligibility</span>
-                    </span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="cursor-pointer wrap-figure-right">
-                    <a href="#" class="text-education text-education-2 d-flex justify-content-end">
-                    <span class="">
-                        Check Your <span class="font-weight-bold">Admissions Eligibility</span>
-                         <img src="{{ asset('img/hat.svg') }}" class="ml-2 mr-2" alt="">
-                    </span>
-                    </a>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8 col-12 d-flex justify-content-center">
+                <div class="wrap-search-main">
+                    <form action="" class="">
+                        <div class=" search-main">
+                            <div class="form-group m-0">
+                                <input type="text" class="form-control search-block rounded-0 border-right-0" id="" aria-describedby="" placeholder="Subject area*">
+                            </div>
+                            <div class="form-group m-0">
+                                <div class="btn-group">
+                                    <button  type="button" class="btn rounded-0 dropdown-toggle search-block form-control border border-right-0 " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Destination <span class="caret"> </span>
+                                    </button>
+                                    <ul class="dropdown-menu search-dropdown-menu">
+                                        <li class="text-center"><a href='#'>Variant One</a></li>
+                                        <li class="text-center"><a href='#'>Variant Two</a></li>
+                                        <li class="text-center"><a href='#'>Variant Three</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-group m-0">
+                                <div class="btn-group ">
+                                    <button  type="button" class="btn rounded-0 dropdown-toggle search-block form-control border" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Qualification <span class="caret"> </span>
+                                    </button>
+                                    <ul class="dropdown-menu search-dropdown-menu">
+                                        <li class="text-center"><a href='#'>Variant One</a></li>
+                                        <li class="text-center"><a href='#'>Variant Two</a></li>
+                                        <li class="text-center"><a href='#'>Variant Three</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary ml-2 search-button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="search-main-mob">
+                            <div class="form-group m-0">
+                                <input type="text" class="form-control rounded-0 input-search_mob border" id="" aria-describedby="" placeholder="Subject area*">
+                            </div>
+                            <div class="form-group mb-0 mt-2">
+                                <div class="btn-group input-search_mob">
+                                    <button  type="button" class="btn rounded-0 dropdown-toggle form-control border" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Destination <span class="caret"> </span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-search-mob">
+                                        <li class="text-center"><a href='#'>Variant One</a></li>
+                                        <li class="text-center"><a href='#'>Variant Two</a></li>
+                                        <li class="text-center"><a href='#'>Variant Three</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-group mb-0 mt-2">
+                                <div class="btn-group input-search_mob">
+                                    <button  type="button" class="btn rounded-0 dropdown-toggle form-control border" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Qualification <span class="caret"> </span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-search-mob">
+                                        <li class="text-center"><a href='#'>Variant One</a></li>
+                                        <li class="text-center"><a href='#'>Variant Two</a></li>
+                                        <li class="text-center"><a href='#'>Variant Three</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-primary mt-3 w-50">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </form>
                 </div>
             </div>
         </div>
@@ -35,25 +89,35 @@
             </div>
         </div>
         <div class="row">
-            @for ($i = 0; $i < 3; $i++)
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
-                    <div class="wrap-card">
-                        <div class="wrap-img-card">
+
+            @for ($i = 0; $i < 2; $i++)
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4 grid-item">
+                    <div class="wrap-new-card">
+                        <div class="wrap-new-img-card">
                             <img src="{{ asset('img/build1.jpg') }}" alt="">
+                            <span class="label-lvl-grade">
+                                Master
+                            </span>
+                            <span class="label-scholarship">
+                               Scholarship <span> $450</span>
+                            </span>
+                            <span class="add_fav" data-toggle="tooltip" data-original-title="Favorite">
+                                <i class="far fa-heart"></i>
+                            </span>
                         </div>
-                        <div class="wrap-card-text">
-                            <span>College of Business Administration Alumni Chapter Scholarship</span>
-                            <div class="dropdown-divider"></div>
+                        <div class="wrap-new-card-text">
+                            <span class="new-card-txt">College of Business Administration Alumni Chapter Scholarship</span>
+
                             <div class="row">
-                                <div class="col-md-7">
-                                    <div class="mb-2">Stanford University</div>
-                                    <p class="mb-2 font-weight-bold h5">Engineering</p>
-                                    <a class=""><u>Stanford, CA, USA</u></a>
+                                <div class="col-md-8 col-7">
+
+                                    <p class="mb-2 font-weight-bold h5 profession-name">Engineering</p>
+                                    <a class="uni-address">Stanford Uni. Stanford, CA, USA</a>
 
                                 </div>
-                                <div class="col-md-5">
+                                <div class="col-md-4 col-5 d-flex align-items-center">
                                     <div class="d-flex justify-content-center ">
-                                        <a href="#" class="btn btn-primary mt-4">Details</a>
+                                        <a href="#" class="btn btn-primary btn-details btn">Details <i class="ml-2 fa fa-angle-right fa-right"></i></a>
                                     </div>
 
                                 </div>
@@ -62,7 +126,40 @@
                     </div>
                 </div>
             @endfor
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4 grid-item">
+                    <div class="wrap-new-card">
+                        <div class="wrap-new-img-card">
+                            <img src="{{ asset('img/build1.jpg') }}" alt="">
+                            <span class="label-lvl-grade-2">
+                                Master
+                            </span>
+                            <span class="label-tution-fee">
+                                $1000
+                            </span>
+                            <span class="add_fav" data-toggle="tooltip" data-original-title="Favorite">
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </div>
+                        <div class="wrap-new-card-text">
+                            <span class="new-card-txt">College of Business Administration Alumni Chapter Scholarship</span>
 
+                            <div class="row">
+                                <div class="col-md-8 col-7">
+
+                                    <p class="mb-2 font-weight-bold h5 profession-name">Engineering</p>
+                                    <a class="uni-address">Stanford Uni. Stanford, CA, USA</a>
+
+                                </div>
+                                <div class="col-md-4 col-5 d-flex align-items-center">
+                                    <div class="d-flex justify-content-center ">
+                                        <a href="#" class="btn btn-primary btn-details btn">Details <i class="ml-2 fa fa-angle-right fa-right"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
         <div class="row">
             <div class="col-12">
@@ -74,37 +171,34 @@
         </div>
         <div class="row">
             @for ($i = 0; $i < 3; $i++)
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
-                    <div class="wrap-card">
-                        <div class="wrap-img-card">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4 grid-item">
+                    <div class="wrap-new-card">
+                        <div class="wrap-new-img-card">
                             <img src="{{ asset('img/comp.jpg') }}" alt="">
                         </div>
-                        <div class="wrap-card-text">
-                            <span>Computer Science</span>
-                            <div class="dropdown-divider"></div>
+                        <div class="wrap-new-card-text">
+                            <span class="new-card-txt">College of Business Administration Alumni Chapter Scholarship</span>
+
                             <div class="row">
-                                <div class="col-md-7">
-                                    <div class="mb-2">Stanford University</div>
+                                <div class="col-md-8 col-8">
+
                                     <p class="mb-2 font-weight-bold h5">Engineering</p>
-                                    <a class=""><u>Stanford, CA, USA</u></a>
+                                    <a class="uni-address">Stanford Uni. Stanford, CA, USA</a>
 
                                 </div>
-                                <div class="col-md-5">
+                                <div class="col-md-4 col-4 d-flex align-items-center">
                                     <div class="d-flex justify-content-center ">
-                                        <a href="#" class="btn btn-primary mt-4">Details</a>
+                                        <a href="#" class="btn btn-primary btn-details">Details <i class="ml-2 fa fa-angle-right fa-right"></i></a>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-                        <div>
-
-                        </div>
-
                     </div>
                 </div>
             @endfor
         </div>
+
         <div class="row">
             <div class="col-12">
                 <div class="d-flex justify-content-between align-items-center mb-3">
@@ -115,33 +209,29 @@
         </div>
         <div class="row">
             @for ($i = 0; $i < 3; $i++)
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
-                    <div class="wrap-card">
-                        <div class="wrap-img-card">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4 grid-item">
+                    <div class="wrap-new-card">
+                        <div class="wrap-new-img-card">
                             <img src="{{ asset('img/univ.jpg') }}" alt="">
                         </div>
-                        <div class="wrap-card-text">
-                            <span>Computer Science</span>
-                            <div class="dropdown-divider"></div>
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <div class="mb-2">Stanford University</div>
+                        <div class="wrap-new-card-text">
+                            <span class="new-card-txt">College of Business Administration Alumni Chapter Scholarship</span>
 
-                                    <a class=""><u>Stanford, CA, USA</u></a>
+                            <div class="row">
+                                <div class="col-md-8 col-8">
+
+                                    <p class="mb-2 font-weight-bold h5">Engineering</p>
+                                    <a class="uni-address">Stanford Uni. Stanford, CA, USA</a>
 
                                 </div>
-                                <div class="col-md-5">
+                                <div class="col-md-4 col-4 d-flex align-items-center">
                                     <div class="d-flex justify-content-center ">
-                                        <a href="#" class="btn btn-primary mt-2">Details</a>
+                                        <a href="#" class="btn btn-primary btn-details">Details <i class="ml-2 fa fa-angle-right fa-right"></i></a>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-                        <div>
-
-                        </div>
-
                     </div>
                 </div>
             @endfor

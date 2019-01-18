@@ -46,7 +46,7 @@
                                         </label>
                                     </div>
                                     <div>
-                                        <div class="d-flex align-items-center cursor-pointer">
+                                        <div class="d-flex align-items-center cursor-pointer attended-school-1">
                                             <img src="{{ asset('img/students/plus.svg') }}" alt="" class="mr-2">
                                             <span class="add-attended">
                                                 Add attended school
@@ -76,6 +76,14 @@
                                             <option>4</option>
                                             <option>5</option>
                                         </select>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center cursor-pointer attended-school-2">
+                                        <img src="{{ asset('img/students/plus.svg') }}" alt="" class="mr-2">
+                                        <span class="add-attended">
+                                                Add attended school
+                                            </span>
                                     </div>
                                 </div>
                             </div>
@@ -200,7 +208,7 @@
                                     <input type="text" class="form-control" id="cityAttend" aria-describedby="cityAttend" placeholder="Enter City/Town...">
                                 </div>
                                 <div>
-                                    <div class="d-flex align-items-center cursor-pointer">
+                                    <div class="d-flex align-items-center cursor-pointer attended-school-1">
                                         <img src="{{ asset('img/students/plus.svg') }}" alt="" class="mr-2">
                                         <span class="add-attended">
                                                 Add attended school
@@ -216,6 +224,14 @@
                                 <div class="form-group">
                                     <label for="zipCodeAttend">Postal/Zip Code</label>
                                     <input type="text" class="form-control" id="addressAttend" aria-describedby="zipCodeAttend" placeholder="Enter Postal/Zip Code...">
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center cursor-pointer attended-school-2">
+                                        <img src="{{ asset('img/students/plus.svg') }}" alt="" class="mr-2">
+                                        <span class="add-attended">
+                                                Add attended school
+                                            </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -13,18 +13,21 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="mb-2 ml-4 mt-4">
-                            Computer Science
-                        </h2>
+                        <div class="computer-scien">
+                            <h2 class="mb-2 ml-4 mt-4">
+                                Computer Science
+                            </h2>
+                        </div>
+
                     </div>
                 </div>
             </div>
             <div class="mb-5">
                 @for ($i = 0; $i < 4; $i++)
-                    <div class="bg-white ml-4 mb-3 py-3 px-3">
+                    <div class="bg-white ml-lg-4 mb-3 py-3 px-3">
                         <div class="container-fluid">
                             <div class="row ">
-                                <div class="col-md-3 col-12 border-right">
+                                <div class="col-xl-3 col-md-12 col-sm-12 col-lg-12 col-12 border-right">
                                     <div class="application-card">
                                         <div>
                                             <div class="section-info">
@@ -77,7 +80,7 @@
 
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-12 border-right">
+                                <div class="col-xl-3 col-md-6 col-sm-6 col-lg-6 col-6  border-right">
                                     <div class="d-flex justify-content-center flex-column align-items-center">
                                         <div class="mb-1">
                                             <div class="font-weight-bold mb-1">English Exam Type</div>
@@ -111,7 +114,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-12 border-right">
+                                <div class="col-xl-3 col-md-6 col-sm-6 col-lg-6 col-6  border-right">
                                     <div class="sat-wrap">
                                         <div>
                                             <div class="font-weight-bold mb-1">English Type</div>
@@ -136,10 +139,18 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div>
+                                            <div class="font-weight-bold mb-1">Overal Score</div>
+                                            <div class="text-dark-gray">
+                                                <div>
+                                                    <span class="exact-scores">Score</span> <span>80%</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </div>
-                                <div class="col-md-3 col-12 border-right">
+                                <div class="col-xl-3 col-md-12 col-sm-12 col-lg-12 col-12  border-right">
                                     <div class="sat-wrap mb-4">
                                         <div>
                                             <div class="font-weight-bold mb-2 mt-2">Quantitative</div>

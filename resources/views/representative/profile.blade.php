@@ -94,7 +94,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-5">
-                                    <div>
+                                    <div class="wrap-del-acc">
                                         <h6>
                                             Delete account
                                         </h6>

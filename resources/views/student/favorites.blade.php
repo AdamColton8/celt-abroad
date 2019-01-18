@@ -25,7 +25,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="wrapper-student-programs">
+                <div class="wrapper-student-programs p-0">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -33,43 +33,48 @@
                                     <div class="tab-content" id="pills-tabContent">
                                         <div class="tab-pane fade show active" id="favorites-programs" role="tabpanel"
                                              aria-labelledby="pills-home-tab">
-                                            @for ($i = 0; $i < 4; $i++)
+
                                                 <div>
-                                                    <div class="row py-3">
-                                                        <div class="col-md-5 col-12">
-                                                            <div class="wrap-img-programs">
-                                                                <img src="https://cdn.the-scientist.com/assets/articleNo/64292/iImg/26721/a6aab0fc-06c7-4bf9-8d4e-d52de026550e-uni-640.jpg"
-                                                                     alt="univer" class="w-100">
+                                                    <div class="row">
+                                                        @for ($i = 0; $i < 5; $i++)
+                                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4 grid-item">
+                                                                <div class="wrap-new-card">
+                                                                    <div class="wrap-new-img-card">
+                                                                        <img src="{{ asset('img/build1.jpg') }}" alt="">
+                                                                        <span class="label-lvl-grade">
+                                                                            Master
+                                                                        </span>
+                                                                           <span class="label-scholarship">
+                                                                           Scholarship <span> $450</span>
+                                                                        </span>
+                                                                            <span class="add_fav" data-toggle="tooltip" data-original-title="Favorite">
+                                                                            <i class="far fa-heart"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="wrap-new-card-text">
+                                                                        <span class="new-card-txt">College of Business Administration Alumni Chapter Scholarship</span>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-8 col-7">
+
+                                                                                <p class="mb-2 font-weight-bold h5 profession-name">Engineering</p>
+                                                                                <a class="uni-address">Stanford Uni. Stanford, CA, USA</a>
+
+                                                                            </div>
+                                                                            <div class="col-md-4 col-5 d-flex align-items-center">
+                                                                                <div class="d-flex justify-content-center ">
+                                                                                    <a href="#" class="btn btn-primary btn-details btn">Details <i class="ml-2 fa fa-angle-right fa-right"></i></a>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-md-7 col-12">
-                                                            <div class="d-flex justify-content-between mb-lg-4 mb-2 title-programs">
-                                                                <span class="h5 mb-0">
-                                                                     Computer Science
-                                                                </span>
-                                                                <span class="h6 mb-0">
-                                                                    56 000 $/per year
-                                                                </span>
-                                                            </div>
-                                                            <div class="mb-lg-5 mb-2">
-                                                                <span class="d-block font-weight-bold">
-                                                                   Engineering
-                                                                </span>
-                                                            </div>
-                                                            <div class="mb-lg-5 mb-2">
-                                                                <span class="h6 font-weight-normal">
-                                                                    Stanford University
-                                                                </span>
-                                                            </div>
-                                                            <div class="">
-                                                                <span class="h6 text-decoration-underline font-weight-normal">
-                                                                    Stanford, CA, USA
-                                                                </span>
-                                                            </div>
-                                                        </div>
+                                                        @endfor
                                                     </div>
                                                 </div>
-                                            @endfor
+
                                         </div>
                                         <div class="tab-pane fade" id="favorites-universities" role="tabpanel"
                                              aria-labelledby="pills-profile-tab">Applied
@@ -85,7 +90,14 @@
         </div>
     </div>
 </section>
-
+<style>
+    .wrapper-student-programs {
+        background: unset;
+        margin-left: 18px;
+        max-width: 1038px;
+        margin-top: 15px;
+    }
+</style>
 <footer class="footer-main">
     @include('footer.footer')
 </footer>

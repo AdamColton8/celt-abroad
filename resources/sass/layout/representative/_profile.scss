@@ -1,4 +1,4 @@
-.personal-info__text-representative{
+.personal-info__text-representative {
   max-width: none;
   font-style: normal;
   font-weight: bold;
@@ -6,18 +6,21 @@
   font-size: 18px;
   margin-right: 22px;
 }
-.dropdown-representative{
-  display: flex!important;
+
+.dropdown-representative {
+  display: flex !important;
   justify-content: center;
   align-items: center;
 }
+
 .representative-sidebar #sidebar ul li a {
   padding: 20px 10px 20px 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.representative-sidebar .student-sidebar__item-link{
+
+.representative-sidebar .student-sidebar__item-link {
   font-style: normal;
   font-weight: bold;
   line-height: normal;
@@ -25,18 +28,22 @@
   color: rgba(217, 217, 217, 0.8);
   margin-bottom: 0;
 }
-.wrap-representative-block{
+
+.wrap-representative-block {
   margin-top: 62px;
   margin-left: 35px;
 }
-.wrap-representative-inside{
+
+.wrap-representative-inside {
   max-width: 1030px;
   width: 100%;
 }
-.wrap-representative-left{
+
+.wrap-representative-left {
   margin-top: 62px;
 }
-.btn-save{
+
+.btn-save {
   font-weight: bold;
   line-height: normal;
   font-size: 24px;
@@ -44,4 +51,15 @@
   background: #38C13E;
   border-radius: 5px;
   padding: 15px 68px;
+}
+
+@media (max-width: 993.98px) {
+  .wrap-del-acc {
+    margin-top: 20px;
+  }
+  .wrap-representative-block{
+    margin: 0 auto;
+    margin-top: 62px;
+    max-width: 214px;
+  }
 }

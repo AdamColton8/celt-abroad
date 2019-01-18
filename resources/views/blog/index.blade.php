@@ -21,7 +21,7 @@
                             <h2 class="mb-3">
                                 Featured Scholarships
                             </h2>
-                            <article>
+                            <article class="article-item">
                                 There are many variations of passages of Lorem Ipsum available, but the majority have
                                 suffered alteration in some form, by injected humour, or randomised words which don't
                                 look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
@@ -82,3 +82,22 @@
     @include('footer.footer')
 </footer>
 <script src="{{ asset('js/app.js') }}"></script>
+<script>
+    if(window.matchMedia('(max-width: 768px)').matches)
+    {
+        $(".article-item").text(function(i, text) {
+
+            if (text.length >= 150) {
+                text = text.substring(0, 250);
+                var lastIndex = text.lastIndexOf(" ");       // позиция последнего пробела
+                text = text.substring(0, lastIndex) + '...'; // обрезаем до последнего слова
+            }
+
+            $(this).text(text);
+
+        });
+
+    }
+
+
+</script>

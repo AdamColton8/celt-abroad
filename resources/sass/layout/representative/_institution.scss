@@ -42,11 +42,12 @@
   padding: 8px 89px;
 }
 
-.add-start-date, .add-tution-fee, .add-deadline-date {
+.add-start-date, .add-tution-fee, .add-deadline-date, .add-admission {
   text-decoration: underline;
   color: #00599d;
 }
-.save-duplicate{
+
+.save-duplicate {
   font-size: 24px;
   padding: 10px 51px;
   background: $light-blue;
@@ -60,7 +61,8 @@
   padding: 5px 68px;
   font-size: 24px;
 }
-.institution-label-addProgram{
+
+.institution-label-addProgram {
   width: 182px;
   height: 97px;
   position: relative;
@@ -74,25 +76,41 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  span{
+  span {
     color: #fff;
     font-weight: bold;
     font-size: 17px;
     text-align: center;
     line-height: 18px;
   }
-  img{
+  img {
     width: 33px;
     height: 31px;
   }
 }
-.justify-content-evenly{
+
+.justify-content-evenly {
   justify-content: space-evenly;
 }
-.wrap-done-item{
-  .add-program{
+
+.wrap-done-item {
+  .add-program {
     font-size: 18px;
     color: $light-blue;
     font-weight: bold;
+  }
+}
+
+@media (max-width: 993.98px) {
+  .institution-page {
+    margin-bottom: 50px !important;
+  }
+  .save-duplicate, .save-add-program {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .btn-save-institution{
+    font-size: 18px;
+    padding: 8px 30px;
   }
 }

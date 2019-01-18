@@ -27,7 +27,7 @@
                                 <div class="wrap-info-scores">
                                     <div class="">
                                         <div class="eng-scores-test">
-                                            <div class="mr-2">
+                                            <div class="mr-2 exam-name">
                                                 I have English exam scores
                                             </div>
                                             <label class="switch" data-toggle="collapse" data-target="#engExamScores">
@@ -63,53 +63,13 @@
                                                 <input type="text" class="form-control mb-2" id="readingScores" placeholder="Reading">
                                                 <input type="text" class="form-control mb-2" id="writingScores" placeholder="Writing">
                                                 <input type="text" class="form-control mb-2" id="speakingScores" placeholder="Speaking">
+                                                <input type="text" class="form-control mb-2" id="overalScores" placeholder="Overal Score">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-5">
-                                <div class="wrap-info-scores">
-                                    <div class="">
-                                        <div class="sat-scores-test">
-                                            <div class="mr-2">
-                                                I have YOS exam scores
-                                            </div>
-                                            <label class="switch" data-toggle="collapse" data-target="#yosExamScores">
-                                                <input type="checkbox">
-                                                <span class="slider round"></span>
-                                            </label>
-                                        </div>
-                                        <div id="yosExamScores" class="collapse">
-                                            <div class="form-group mt-4">
-                                                <label for="yosExamDate">YOS Exam Date</label>
-                                                <select class="form-control" id="yosExamDate">
-                                                    <option selected>YYYY-MMM-DD</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="yosVerbalScore">Verbal</label>
-                                                <input type="text" class="form-control mb-2" id="yosVerbalScore" placeholder="Score">
-                                                <input type="text" class="form-control mb-2" id="yosVerbalRank" placeholder="Rank%">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="yosVerbalScore">Quantitative</label>
-                                                <input type="text" class="form-control mb-2" id="yosQuantitativeScore" placeholder="Score">
-                                                <input type="text" class="form-control mb-2" id="yosQuantitativeRank" placeholder="Rank%">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="yosWritingScore">Writing</label>
-                                                <input type="text" class="form-control mb-2" id="yosWritingScore" placeholder="Score">
-                                                <input type="text" class="form-control mb-2" id="yosWritingRank" placeholder="Rank%">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-5">
@@ -123,8 +83,8 @@
                             <div class="col-12 col-md-5">
                                 <div class="wrap-info-scores">
                                     <div class="">
-                                        <div class="sat-scores-test">
-                                            <div class="mr-2">
+                                        <div class="sat-scores-test sat-margin">
+                                            <div class="mr-2 exam-name">
                                                 I have SAT exam scores
                                             </div>
                                             <label class="switch" data-toggle="collapse" data-target="#satExamScores">
@@ -166,7 +126,7 @@
                                 <div class="wrap-info-scores">
                                     <div class="">
                                         <div class="sat-scores-test">
-                                            <div class="mr-2">
+                                            <div class="mr-2 exam-name">
                                                 I have GMAT exam scores
                                             </div>
                                             <label class="switch" data-toggle="collapse" data-target="#gmatExamScores">
@@ -204,13 +164,14 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
-                        <div class="row">
+                        <div class="row justify-content-between align-items-end">
                             <div class="col-12 col-md-5">
                                 <div class="wrap-info-scores">
                                     <div class="mt-4">
                                         <div class="gre-scores-test">
-                                            <div class="mr-2">
+                                            <div class="mr-2 exam-name">
                                                 I have GRE exam scores
                                             </div>
                                             <label class="switch " data-toggle="collapse" data-target="#GREExamScores">
@@ -243,6 +204,48 @@
                                                 <label for="GREWritingScore">Writing</label>
                                                 <input type="text" class="form-control mb-2" id="GREWritingScore" placeholder="Score">
                                                 <input type="text" class="form-control mb-2" id="GREWritingRank" placeholder="Rank%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <div class="wrap-info-scores">
+                                    <div class="mt-4">
+                                        <div class="sat-scores-test">
+                                            <div class="mr-2 exam-name">
+                                                I have YOS exam scores
+                                            </div>
+                                            <label class="switch" data-toggle="collapse" data-target="#yosExamScores">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                        <div id="yosExamScores" class="collapse">
+                                            <div class="form-group mt-4">
+                                                <label for="yosExamDate">YOS Exam Date</label>
+                                                <select class="form-control" id="yosExamDate">
+                                                    <option selected>YYYY-MMM-DD</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="yosVerbalScore">Verbal</label>
+                                                <input type="text" class="form-control mb-2" id="yosVerbalScore" placeholder="Score">
+                                                <input type="text" class="form-control mb-2" id="yosVerbalRank" placeholder="Rank%">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="yosVerbalScore">Quantitative</label>
+                                                <input type="text" class="form-control mb-2" id="yosQuantitativeScore" placeholder="Score">
+                                                <input type="text" class="form-control mb-2" id="yosQuantitativeRank" placeholder="Rank%">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="yosWritingScore">Writing</label>
+                                                <input type="text" class="form-control mb-2" id="yosWritingScore" placeholder="Score">
+                                                <input type="text" class="form-control mb-2" id="yosWritingRank" placeholder="Rank%">
                                             </div>
                                         </div>
                                     </div>

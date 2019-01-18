@@ -155,7 +155,7 @@
                                             <div class="col-12 col-xl-6">
                                                 <div class="mb-2">
                                                     <div class="font-weight-bold mb-1">
-                                                        Attended Institution Form
+                                                        Attended Institution From
                                                     </div>
                                                     <div class="text-dark-gray">
                                                         2018-08-17
@@ -290,6 +290,12 @@
                                                 <span class="exact-scores">Speaking</span> <span>92%</span>
                                             </div>
 
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="font-weight-bold mb-1 mt-2">Overal Score</div>
+                                        <div class="text-dark-gray">
+                                            <span class="exact-scores">Score</span> <span>80%</span>
                                         </div>
                                     </div>
                                 </div>

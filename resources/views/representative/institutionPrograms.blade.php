@@ -48,7 +48,7 @@
 
                                     </div>
                                 </div>
-                                <div class="add-deadline-date float-right mb-2 cursor-pointer">+ Add start date</div>
+                                <div class="add-deadline-date float-right mb-2 cursor-pointer">+ Add end date</div>
                             </div>
                         </div>
                         <div class="row justify-content-between">
@@ -74,31 +74,31 @@
                                     </div>
                                     <div class="col-md-4 col-12">
                                         <div class="form-group">
-                                            <label for="Bonus">Bonus</label>
-                                            <select class="form-control" id="Bonus">
-                                                <option selected> </option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
+                                            <label for="AppFee">App Fee</label>
+                                            <input type="text" class=" form-control"  id="AppFee" value="" placeholder="">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="add-tution-fee mb-2 cursor-pointer d-flex justify-content-center">
-                                            <span>
-                                                + Add tution fee
-                                            </span>
-                                        </div>
+                                        {{--<div class="add-tution-fee mb-2 cursor-pointer d-flex justify-content-center">--}}
+                                            {{--<span>--}}
+                                                {{--+ Add tution fee--}}
+                                            {{--</span>--}}
+                                        {{--</div>--}}
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-5 col-12">
                                 <div class="form-group">
-                                    <label for="">Application fee</label>
-                                    <input type="text" class=" form-control " placeholder="None">
+                                    <label for="Bonuses">Bonuses</label>
+                                    <select class="form-control" id="Bonuses">
+                                        <option selected>Select</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -125,8 +125,8 @@
                         <div class="row justify-content-between">
                             <div class="col-12 col-md-5">
                                 <div class="form-group">
-                                    <label for="">Duration</label>
-                                    <input type="text" class=" form-control ">
+                                    <label for="Duration">Duration</label>
+                                    <input type="text" class="form-control" id="Duration">
                                 </div>
                             </div>
                             <div class="col-12 col-md-5">
@@ -139,6 +139,23 @@
                                         <option>4</option>
                                         <option>5</option>
                                     </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" >
+                            <div class="col-12 col-md-5">
+                                <div class="form-group" id="row-admission-0">
+                                    <label for="Admission">Admission requirements</label>
+                                    <select class="form-control" id="Admission">
+                                        <option selected>High School Diploma</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <div class="add-admission float-right mb-2 cursor-pointer">+ Admission requirements</div>
                                 </div>
                             </div>
                         </div>
@@ -221,6 +238,12 @@
         var $div = $('div[id^="row-tution-fee-0"]:last');
         var num = parseInt( $div.prop("id").match(/\d+/g), 10 ) +1;
         $('#row-tution-fee-0').clone(true).insertAfter($div).prop('id', 'start-date-0'+ num);
+
+    });
+    $('.add-admission').on('click', function(){
+        var $div = $('div[id^="row-admission-0"]:last');
+        var num = parseInt( $div.prop("id").match(/\d+/g), 10 ) +1;
+        $('#row-admission-0').clone(true).insertAfter($div).prop('id', 'row-admission-0'+ num);
 
     });
 

@@ -29,6 +29,16 @@
                             <div class="col-12 col-md-5">
                                 <div>
                                     <div class="form-group">
+                                        <label for="ProgramLevels">Country field</label>
+                                        <select class="form-control" id="ProgramLevels">
+                                            <option selected>Select</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
                                         <label for="ProgramLevels">Program Levels*</label>
                                         <select class="form-control" id="ProgramLevels">
                                             <option selected>Select</option>
@@ -48,17 +58,9 @@
                                             <option>5</option>
                                         </select>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="Discipline">Discipline Your desired area of study</label>
-                                        <select class="form-control" id="Discipline">
-                                            <option selected>Select...</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div>
+
                                 </div>
+                                <label for="">Area of study</label>
                                 <div class="wrap-checkbox-student rounded">
                                     <div class="">
                                         <label class="container-checkbox">Engineering and Technology

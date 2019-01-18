@@ -13,8 +13,22 @@
 #schoolsAttended-0{
   display: none!important;
 }
+
+.attended-school-2{
+  display: none!important;
+}
+
 @media (max-width: 993.98px) {
   .wrapper-schools-attended{
     margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .attended-school-1{
+    display: none!important;
+  }
+  .attended-school-2{
+    display: flex!important;
   }
 }

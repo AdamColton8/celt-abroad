@@ -41,8 +41,12 @@
                         </article>
                         <div class="row mb-3">
                             @for ($i = 0; $i < 4; $i++)
-                                <div class="col-md-3"><img src="{{ asset('img/blog/arch.jpg') }}" alt=""
-                                                           class="img-blog-article"></div>
+                                <div class="col-md-3">
+                                    <div class="blog-img-wrap">
+                                        <img src="{{ asset('img/blog/arch.jpg') }}" alt=""
+                                             class="img-blog-article img-fluid">
+                                    </div>
+                                    </div>
                             @endfor
                         </div>
                         <h4 class="mb-3">
@@ -182,7 +186,9 @@
 
     </div>
 </section>
+<style>
 
+</style>
 <footer class="footer-main">
     @include('footer.footer')
 </footer>

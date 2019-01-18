@@ -75,7 +75,7 @@
 
                     </div>
                     <div class="col-12">
-                        <div class="wrapper-student-edu-sum ">
+                        <div class="wrapper-student-edu-sum institution-page">
                             <div class="row">
                                 <div class="col-12 mb-2">
                                     <h5>
@@ -120,7 +120,7 @@
                                 <div class="col-12">
                                     <div class="d-flex justify-content-center mt-5">
                                         <button type="submit" class="btn btn-save-institution">
-                                            Save
+                                            Save and add program
                                         </button>
                                     </div>
                                 </div>
@@ -134,7 +134,11 @@
     </div>
     </form>
 </section>
-
+<style>
+    div.card-header.note-toolbar {
+        position: relative!important;
+    }
+</style>
 <footer class="footer-main">
     @include('footer.footer')
 </footer>

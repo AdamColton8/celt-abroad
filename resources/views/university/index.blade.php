@@ -42,18 +42,18 @@
         <div class="row">
             <div class="col-md-12 col-lg-8">
                 <div class="position-relative">
-                        <div class="prev-uni-for"></div>
-                        <div class="next-uni-for"></div>
+                    <div class="prev-uni-for"></div>
+                    <div class="next-uni-for"></div>
                     <div class="slider-uni-for ">
                         <div class="item">
                             <img
-                                src="https://onlinelearningtips.com/wp-content/uploads/sites/15/2013/10/life-hacks-and-education.jpg"
-                                alt="image" draggable="false"/>
+                                    src="https://onlinelearningtips.com/wp-content/uploads/sites/15/2013/10/life-hacks-and-education.jpg"
+                                    alt="image" draggable="false"/>
                         </div>
                         <div class="item">
                             <img
-                                src="http://www.gettingsmart.com/wp-content/uploads/2016/04/Digital-Learning-Feature-Image.jpg"
-                                alt="image" draggable="false"/>
+                                    src="http://www.gettingsmart.com/wp-content/uploads/2016/04/Digital-Learning-Feature-Image.jpg"
+                                    alt="image" draggable="false"/>
                         </div>
                         <div class="item">
                             <img src="https://bdcnetwork.s3.amazonaws.com/s3fs-public/fitts-woolard-hall.jpg"
@@ -72,7 +72,7 @@
 
                 </div>
                 <div>
-                    <div class="slider-uni-nav mb-5">
+                    <div class="slider-uni-nav">
                         <div class="item">
                             <img
                                     src="https://onlinelearningtips.com/wp-content/uploads/sites/15/2013/10/life-hacks-and-education.jpg"
@@ -102,24 +102,24 @@
                         <div class="wrap-tab-university">
                             <ul class="nav nav-pills justify-content-between mb-3 pills-univer-main" id="pills-tab-top"
                                 role="tablist">
-                                <li class="nav-item">
+                                <li class="nav-item nav-university-tab">
                                     <a class="nav-link active" id="pills-Programs-tab" data-toggle="pill"
                                        href="#pills-home"
                                        role="tab" aria-controls="pills-Programs" aria-selected="true">Programs</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item nav-university-tab">
                                     <a class="nav-link" id="pills-Scholarships-tab" data-toggle="pill"
                                        href="#pills-profile"
                                        role="tab" aria-controls="pills-Scholarships"
                                        aria-selected="false">Scholarships</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item nav-university-tab">
                                     <a class="nav-link" id="pills-Description-tab" data-toggle="pill"
                                        href="#pills-contact"
                                        role="tab" aria-controls="pills-Description"
                                        aria-selected="false">Description</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item nav-university-tab">
                                     <a class="nav-link" id="pills-Video-tab" data-toggle="pill" href="#pills-video"
                                        role="tab" aria-controls="pills-Video" aria-selected="false">Video</a>
                                 </li>
@@ -129,25 +129,25 @@
                                      aria-labelledby="pills-home-tab">
                                     <ul class="nav nav-pills mb-3 justify-content-between" id="pills-tab-inside"
                                         role="tablist">
-                                        <li class="nav-item">
+                                        <li class="nav-item nav-degrees">
                                             <a class="nav-link active" id="pills-home-tab" data-toggle="pill"
                                                href="#pills-bach" role="tab" aria-controls="pills-bach"
                                                aria-selected="true">Bachelor's degrees</a>
                                         </li>
-                                        <li class="nav-item">
+                                        <li class="nav-item nav-degrees">
                                             <a class="nav-link" id="pills-profile-tab" data-toggle="pill"
                                                href="#pills-master" role="tab" aria-controls="pills-master"
                                                aria-selected="false">Master's degrees</a>
                                         </li>
-                                        <li class="nav-item">
+                                        <li class="nav-item nav-degrees">
                                             <a class="nav-link" id="pills-contact-tab" data-toggle="pill"
                                                href="#pills-foundation" role="tab" aria-controls="pills-master"
                                                aria-selected="false">Foundation year</a>
                                         </li>
-                                        <li class="nav-item">
+                                        <li class="nav-item nav-degrees">
                                             <a class="nav-link" id="pills-lang-tab" data-toggle="pill"
                                                href="#pills-lang" role="tab" aria-controls="pills-master"
-                                               aria-selected="false">Foundation year</a>
+                                               aria-selected="false">Language Courses</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content" id="pills-tabContent">
@@ -163,13 +163,17 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-md-7 col-12">
-                                                            <div class="d-flex justify-content-between mb-2">
-                                                            <span class="h5">
-                                                                Electrical Engineering
-                                                            </span>
-                                                                <span class="h6">
-                                                                56 000 $/per year
-                                                            </span>
+                                                            <div class="d-flex justify-content-between align-items-end mb-2 row">
+                                                                <div class="col-12 col-md-6">
+                                                                    <span class="h5 title-card-uni">
+                                                                        Electrical Engineering
+                                                                    </span>
+                                                                </div>
+                                                                <div class="col-12 col-md-6">
+                                                                    <span class="h6 price-university">
+                                                                        56 000 $/per year
+                                                                    </span>
+                                                                </div>
                                                             </div>
                                                             <div class="mb-4">
                                                             <span class="h6 font-weight-normal">
@@ -232,7 +236,8 @@
                                                             </div>
                                                             <div class="d-flex justify-content-between">
                                                                 <div>
-                                                                    <button class="btn btn-danger font-weight-bold disabled" disabled>
+                                                                    <button class="btn btn-danger font-weight-bold disabled"
+                                                                            disabled>
                                                                         Apply
                                                                     </button>
                                                                 </div>
@@ -307,8 +312,9 @@
                                                     allowTransparency="true" allowfullscreen
                                                     data-src="https://www.youtube.com/embed/UL6DE6yrEyo?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
                                             <button class="videoPoster js-videoPoster"><img
-                                                    class="d-block mx-auto play-btn"
-                                                    src="{{ asset('img/university/play-btn.svg') }}" alt=""></button>
+                                                        class="d-block mx-auto play-btn"
+                                                        src="{{ asset('img/university/play-btn.svg') }}" alt="">
+                                            </button>
                                         </div>
                                     </div>
                                 </div>

@@ -18,3 +18,10 @@ $('#sidebarCollapse').click(function() {
         $('.wrap-collapse').addClass('collapse-active');
     }
 });
+
+//sidebar change text
+$(".show-menu-sidebar").click(function () {
+    $(".show-menu-sidebar").fadeOut(function () {
+        $(".show-menu-sidebar").text(($(".show-menu-sidebar").text() == 'Show Menu') ? 'Hide Menu' : 'Show Menu').fadeIn("fast");
+    })
+});
